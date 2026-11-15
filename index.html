@@ -9,11 +9,12 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#07110c;color:#f5fff7;line-height:1.7}
+body{font-family:Arial,sans-serif;background:#07110c;color:#f5fff7;line-height:1.7;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #20382a}
-.logo{font-size:20px;font-weight:800;color:#62d68a;letter-spacing:1px}
-nav{display:flex;gap:25px;font-size:14px;color:#c7d6cb}
+header{width:100%;max-width:100%;padding:16px 5%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;border-bottom:1px solid #20382a;overflow:hidden}
+.logo{display:flex;justify-content:center;align-items:center;width:100%;max-width:100%}
+.logo img{display:block;width:clamp(76px,18vw,112px);height:auto;max-width:100%;object-fit:contain}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-size:14px;color:#c7d6cb;max-width:100%}
 nav a:hover{color:#65db8b}
 .hero{padding:100px 8% 90px;text-align:center;background:radial-gradient(ellipse at top,#174b2b 0%,#07110c 65%)}
 .tag{color:#72e39a;font-size:12px;letter-spacing:3px;font-weight:bold}
@@ -41,8 +42,9 @@ section{padding:75px 8%}
 .join p{color:#d0ded4;max-width:600px;margin:15px auto 28px}
 footer{text-align:center;padding:28px 8%;border-top:1px solid #263b2d;color:#91a397;font-size:13px}
 @media(max-width:600px){
-header{padding:18px 5%;flex-wrap:wrap;gap:12px}
-nav{gap:14px;font-size:12px}
+header{padding:14px 4%;gap:10px}
+.logo img{width:82px;height:auto}
+nav{gap:10px;font-size:12px}
 .hero{padding:75px 6%}
 section{padding:60px 6%}
 .btn{margin:5px}
