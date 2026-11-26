@@ -4,148 +4,156 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nexus Global Academy | Trade With Purpose</title>
-<meta name="description" content="Nexus Global Academy — structured trading education, price action, risk management and a serious trading community.">
+<meta name="description" content="Nexus Global Academy is an online trading community focused on price action, risk management and trader development.">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,sans-serif;background:#030805;color:#f5fff8;line-height:1.6;overflow-x:hidden}
+body{font-family:Arial,sans-serif;background:#07110c;color:#f5fff7;line-height:1.7;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 8%,rgba(20,112,57,.18),transparent 30%),radial-gradient(circle at 10% 60%,rgba(10,74,38,.12),transparent 30%);z-index:-1}
-header{position:absolute;top:0;left:0;width:100%;z-index:10;padding:20px 6%;display:flex;justify-content:center}
-nav{display:flex;gap:25px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9fb2a6}
-nav a:hover{color:#49dc7b}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 6% 55px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 15%,#103c24 0%,#06100a 38%,#030805 72%)}
-.hero:after{content:"";position:absolute;width:680px;height:680px;border-radius:50%;background:radial-gradient(circle,rgba(24,170,79,.16),transparent 65%);bottom:-380px;left:50%;transform:translateX(-50%);filter:blur(8px)}
-.hero-inner{position:relative;z-index:2;width:min(950px,100%)}
-.hero-logo{display:flex;justify-content:center;margin-bottom:18px}
-.hero-logo img{width:clamp(120px,18vw,165px);height:auto;filter:drop-shadow(0 0 28px rgba(46,221,112,.14))}
-.badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(69,210,117,.35);background:rgba(17,73,39,.35);padding:9px 16px;border-radius:999px;color:#b8e9c8;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 0 25px rgba(33,190,91,.08)}
-.dot{width:7px;height:7px;border-radius:50%;background:#35dc73;box-shadow:0 0 12px #35dc73}
-h1{font-size:clamp(44px,8vw,88px);line-height:.98;letter-spacing:-.055em;margin:25px auto 18px;max-width:900px;font-weight:900}
-h1 span{color:#2cdb6d}
-.hero-copy{max-width:650px;margin:0 auto;color:#b6c6bc;font-size:16px}
-.hero-copy strong{color:#edf9f1}
-.join-row{margin:25px 0 18px;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap}
-.price{font-size:28px;font-weight:900;color:#53e27f}
-.price small{font-size:11px;color:#8fa197;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:#38d873;color:#031108;padding:15px 25px;border-radius:10px;font-weight:900;font-size:14px;box-shadow:0 12px 35px rgba(34,211,102,.2);transition:.2s}
-.btn:hover{transform:translateY(-2px);background:#57eb8b}
-.btn-outline{background:rgba(255,255,255,.02);border:1px solid #345442;color:#d4e6da;box-shadow:none}
-.btn-outline:hover{background:rgba(255,255,255,.06)}
-.trade-card{margin:38px auto 0;max-width:880px;border:1px solid rgba(105,145,119,.28);background:linear-gradient(180deg,rgba(11,25,17,.82),rgba(5,12,8,.9));border-radius:18px;display:grid;grid-template-columns:repeat(4,1fr);box-shadow:0 25px 70px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.04);overflow:hidden;text-align:left}
-.trade-item{padding:18px 20px;border-right:1px solid rgba(105,145,119,.18)}
-.trade-item:last-child{border-right:0}
-.trade-item label{display:block;color:#71877a;font-size:9px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:5px}
-.trade-item strong{font-size:15px;color:#f0fff4}
-.trade-item .green{color:#45df7b}
-.illustrative{margin:8px auto 0;max-width:880px;text-align:right;color:#56675d;font-size:8px;letter-spacing:.2em;text-transform:uppercase}
-section{padding:85px 7%}
-.section-wrap{max-width:1050px;margin:auto}
-.section-tag{text-align:center;color:#54dc82;font-size:10px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
-.section-title{text-align:center;font-size:clamp(30px,4vw,45px);line-height:1.1;letter-spacing:-.03em;margin:10px auto 14px}
-.section-intro{text-align:center;color:#99aa9f;max-width:680px;margin:0 auto 38px;font-size:15px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.card{background:linear-gradient(180deg,#0b1710,#07100b);border:1px solid #1d3426;border-radius:16px;padding:24px;min-height:190px}
-.card-number{font-size:11px;color:#42d975;font-weight:900;letter-spacing:.14em}
-.card h3{margin:30px 0 8px;font-size:18px}
-.card p{font-size:13px;color:#96a99d}
-.dark-section{background:#06100a;border-top:1px solid #102318;border-bottom:1px solid #102318}
-.join{text-align:center;background:radial-gradient(ellipse at center,#124b29 0%,#06110a 55%,#030805 100%);padding:95px 7%}
-.join-box{max-width:780px;margin:auto}
-.join p{color:#b9cabe;max-width:600px;margin:0 auto 25px}
-footer{text-align:center;padding:28px 7%;border-top:1px solid #17281e;color:#718378;font-size:11px}
-@media(max-width:720px){
-header{padding:15px 4%}
-nav{gap:13px;font-size:9px}
-.hero{padding:82px 5% 45px}
-.hero-logo img{width:125px}
-h1{font-size:clamp(42px,13vw,62px)}
-.hero-copy{font-size:14px}
-.trade-card{grid-template-columns:repeat(2,1fr);margin-top:28px}
-.trade-item:nth-child(2){border-right:0}
-.trade-item:nth-child(-n+2){border-bottom:1px solid rgba(105,145,119,.18)}
-.cards{grid-template-columns:1fr}
-section{padding:65px 6%}
-.join{padding:75px 6%}
+header{width:100%;max-width:100%;padding:9px 5%;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #20382a;overflow:hidden}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-size:14px;color:#c7d6cb;max-width:100%}
+nav a:hover{color:#65db8b}
+.hero{padding:28px 8% 70px;text-align:center;background:radial-gradient(ellipse at top,#174b2b 0%,#07110c 65%)}
+.hero-logo{display:flex;justify-content:center;align-items:center;margin:0 auto 22px}
+.hero-logo img{display:block;width:clamp(130px,22vw,170px);height:auto;max-width:100%;object-fit:contain}
+.tag{color:#72e39a;font-size:12px;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.15;margin:22px auto;max-width:850px}
+h1 span{color:#65db8b}
+.hero p{max-width:620px;margin:0 auto 26px;color:#c1d1c6;font-size:16px}
+.price-note{display:flex;align-items:baseline;justify-content:center;gap:7px;margin:0 auto 12px;color:#c1d1c6;font-size:13px;letter-spacing:.3px}
+.price-note strong{color:#72e39a;font-size:25px;line-height:1;font-weight:700}
+.price-note span:first-child{font-size:10px;letter-spacing:1.5px;color:#91a397;font-weight:bold}
+.btn{display:inline-block;background:#45bd70;color:#06150b;padding:15px 28px;border-radius:7px;font-weight:bold}
+.btn:hover{background:#6be394}
+.btn-outline{border:1px solid #5cbd7a;color:#8be5a5;background:transparent;margin-left:10px}
+section{padding:62px 8%}
+.section-title{text-align:center;font-size:30px;margin-bottom:15px}
+.section-intro{text-align:center;color:#aebeb3;max-width:650px;margin:0 auto 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#101e15;border:1px solid #294634;padding:24px;border-radius:12px}
+.card h3{color:#70df95;margin-bottom:12px}
+.card p{color:#bdcbbf;font-size:14px}
+.number{font-size:28px;color:#66db8e;margin-bottom:12px}
+.about{background:#0d1911}
+.about-content{max-width:850px;margin:auto;text-align:center}
+.about-content p{color:#c1d0c5;margin-top:18px}
+.steps{counter-reset:step}
+.step{background:#101e15;border:1px solid #294634;padding:23px;border-radius:10px}
+.step h3{color:#6fe095;margin-bottom:8px}
+.join{text-align:center;background:linear-gradient(135deg,#123c23,#07110c)}
+.join p{color:#d0ded4;max-width:600px;margin:15px auto 28px}
+footer{text-align:center;padding:24px 8%;border-top:1px solid #263b2d;color:#91a397;font-size:13px}
+@media(max-width:600px){
+header{padding:7px 4%}
+nav{gap:10px;font-size:12px}
+.hero{padding:18px 6% 54px}
+.hero-logo{margin-bottom:18px}
+.hero-logo img{width:145px;height:auto}
+section{padding:48px 6%}
+.btn{margin:5px}
 }
 </style>
 </head>
 
 <body>
+
 <header>
 <nav>
 <a href="#home">Home</a>
+<a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#community">Community</a>
-<a href="https://whop.com/checkout/plan_bPOMwFpZyvLxK">Join Academy ↗</a>
 </nav>
 </header>
 
 <main>
-<section class="hero" id="home">
-<div class="hero-inner">
-<div class="hero-logo"><img src="1775072244922.png" alt="Nexus Global Academy"></div>
-<div class="badge"><span class="dot"></span> Your Trading Journey Starts Here</div>
-<h1>Trade with purpose.<br><span>Build with discipline.</span></h1>
-<p class="hero-copy">Stop trading without a plan. <strong>NEXUS GLOBAL ACADEMY</strong> gives you structured education, price-action training, risk management and a community built for traders who are serious about improving.</p>
-
-<div class="join-row">
-<div class="price"><small>Membership</small><br>$88 <small>/ 6 months</small></div>
-<a class="btn" href="https://whop.com/checkout/plan_bPOMwFpZyvLxK">JOIN NEXUS GLOBAL ACADEMY →</a>
+<div class="hero" id="home">
+<div class="hero-logo"><img src="1775072244922.png" alt="Nexus Global Academy Logo"></div>
+<div class="tag">WELCOME TO NEXUS GLOBAL ACADEMY</div>
+<h1>Build Knowledge.<br><span>Master The Markets.</span></h1>
+<p>An online trading academy and community dedicated to developing disciplined, knowledgeable and confident traders through education, price action and risk management.</p>
+<div class="price-note"><span>MEMBERSHIP</span><strong>$88</strong><span>/ 6 months</span></div>
+<a class="btn" href="https://whop.com/checkout/plan_bPOMwFpZyvLxK">Join The Academy ↗</a>
+<a class="btn btn-outline" href="#about">Explore More</a>
 </div>
 
-<div class="trade-card">
-<div class="trade-item"><label>Focus</label><strong>Price Action</strong></div>
-<div class="trade-item"><label>Risk</label><strong>Risk Management</strong></div>
-<div class="trade-item"><label>Community</label><strong>Active Traders</strong></div>
-<div class="trade-item"><label>Mindset</label><strong class="green">Discipline First</strong></div>
-</div>
-<div class="illustrative">Education • Practice • Progress</div>
+<section id="about" class="about">
+<div class="about-content">
+<div class="tag">WHO WE ARE</div>
+<h2 class="section-title">More Than A Trading Community</h2>
+<p>Nexus Global Academy is an online learning environment where traders come together to study the financial markets, develop their skills and grow through shared knowledge.</p>
+<p>Our mission is to make trading education accessible while encouraging discipline, patience and responsible risk management.</p>
 </div>
 </section>
 
-<section id="education" class="dark-section">
-<div class="section-wrap">
-<div class="section-tag">What you get</div>
-<h2 class="section-title">Everything built around becoming a better trader.</h2>
-<p class="section-intro">A clean learning environment focused on the things that matter: understanding price, managing risk and developing a repeatable trading process.</p>
+<section id="education">
+<div class="tag" style="text-align:center">WHAT WE OFFER</div>
+<h2 class="section-title">Learn. Practice. Improve.</h2>
+<p class="section-intro">Develop a stronger understanding of the markets through structured education and an active trading community.</p>
+
 <div class="cards">
-<div class="card"><div class="card-number">01 — EDUCATION</div><h3>Structured Trading Lessons</h3><p>Learn step by step through organized lessons designed to build your understanding instead of overwhelming you.</p></div>
-<div class="card"><div class="card-number">02 — PRICE ACTION</div><h3>Read the Market</h3><p>Study candlestick behavior, confirmations, momentum and real trading opportunities through practical market examples.</p></div>
-<div class="card"><div class="card-number">03 — RISK</div><h3>Protect Your Capital</h3><p>Build discipline around stop losses, position sizing and responsible risk so one trade never controls your journey.</p></div>
+<div class="card">
+<div class="number">01</div>
+<h3>Trading Education</h3>
+<p>Structured lessons designed to help you understand the markets and develop your trading knowledge step by step.</p>
+</div>
+<div class="card">
+<div class="number">02</div>
+<h3>Price Action</h3>
+<p>Learn to study market structure, price movements, confirmations and trading opportunities.</p>
+</div>
+<div class="card">
+<div class="number">03</div>
+<h3>Risk Management</h3>
+<p>Understand position sizing, stop losses and responsible risk management to protect your trading capital.</p>
+</div>
+<div class="card">
+<div class="number">04</div>
+<h3>Market Analysis</h3>
+<p>Access market breakdowns and educational trade discussions to improve your decision-making.</p>
 </div>
 </div>
+</section>
+
+<section class="about">
+<div class="tag" style="text-align:center">OUR PHILOSOPHY</div>
+<h2 class="section-title">Discipline Over Emotion</h2>
+<p class="section-intro">Successful trading development requires patience, consistency, continuous learning and the ability to manage risk. We believe the process matters as much as the outcome.</p>
 </section>
 
 <section id="community">
-<div class="section-wrap">
-<div class="section-tag">The Nexus Environment</div>
-<h2 class="section-title">Learn. Execute. Review. Improve.</h2>
-<p class="section-intro">You do not have to figure everything out alone. Join a focused community where education and trading development happen together.</p>
+<div class="tag" style="text-align:center">YOUR JOURNEY STARTS HERE</div>
+<h2 class="section-title">Grow With The Community</h2>
+<p class="section-intro">Join a community of learners committed to understanding the markets, sharing knowledge and improving together.</p>
 <div class="cards">
-<div class="card"><div class="card-number">LEARN</div><h3>Build Your Foundation</h3><p>Develop the knowledge and understanding you need before putting pressure on yourself to perform.</p></div>
-<div class="card"><div class="card-number">PRACTICE</div><h3>Study Real Markets</h3><p>Use market breakdowns and educational discussions to sharpen your ability to identify quality opportunities.</p></div>
-<div class="card"><div class="card-number">GROW</div><h3>Develop Your Process</h3><p>Build consistency through patience, discipline, risk management and continuous review of your trading decisions.</p></div>
+<div class="step">
+<h3>Learn</h3>
+<p>Access educational lessons and develop your trading foundation.</p>
+</div>
+<div class="step">
+<h3>Engage</h3>
+<p>Connect with other learners and participate in market discussions.</p>
+</div>
+<div class="step">
+<h3>Develop</h3>
+<p>Apply what you learn, review your progress and improve your process.</p>
 </div>
 </div>
 </section>
 
 <section class="join">
-<div class="join-box">
-<div class="section-tag">NEXUS GLOBAL ACADEMY</div>
-<h2 class="section-title">Your next level starts with the right environment.</h2>
-<p>Join the academy and give yourself access to structured trading education, practical market study and a community focused on becoming better traders.</p>
-<div class="price">$88 <small>/ 6 months</small></div>
-<br>
-<a class="btn" href="https://whop.com/checkout/plan_bPOMwFpZyvLxK">JOIN THE ACADEMY →</a>
-</div>
+<div class="tag">NEXUS GLOBAL ACADEMY</div>
+<h2 class="section-title">Your Trading Journey Starts Today.</h2>
+<p>Take the next step towards becoming a more informed and disciplined trader. Learn with us. Grow with us.</p>
+<div class="price-note"><span>MEMBERSHIP</span><strong>$88</strong><span>/ 6 months</span></div>
+<a class="btn" href="https://whop.com/checkout/plan_bPOMwFpZyvLxK">JOIN NEXUS GLOBAL ACADEMY ↗</a>
 </section>
 </main>
 
 <footer>
-<p>© 2026 NEXUS GLOBAL ACADEMY. All rights reserved.</p>
+<p>© 2026 Nexus Global Academy. All rights reserved.</p>
 <p>Trading involves financial risk. Education does not guarantee profits.</p>
 </footer>
+
 </body>
 </html>
